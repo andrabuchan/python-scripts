@@ -1,7 +1,8 @@
 # splitseqs.py - splits multiple sequences in one file to their own individual files
-    #Read the input file
 
-    inputfile='lterr_genomad/Lterr_summary/Lterr_virus.fna'
+    #Read the input file    
+
+    inputfile='path to input file full of sequences'
     with open(inputfile, 'r') as file:
         sequences = file.read().split('>')
 
