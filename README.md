@@ -22,3 +22,26 @@
       with open(f'{seq_name}.phil.fasta', 'w') as output_file: 
         output_file.write(f'>{seq_name}\n{seq_data}\n')
 
+
+# Python fasta parser - parses fasta input file and puts sequences into a dictionary
+
+    with open("input.fa", "r") as infile:
+        linelst=[] #used to hold each line in input file
+        seq = ""
+        seqdict={} #used to assign sequences to corresponding headers
+
+    #adds each line in input file into a list
+        for line in infile.readlines():
+            linelst.append(line)
+
+        for entry in linelst:
+            count=0
+
+            if entry.startswith(">"):
+                header = entry
+                
+            else:
+                seq = seq + entry
+        
+            seqdict.update({header:seq})
+
