@@ -42,6 +42,8 @@
                 
             else:
                 seq = seq + entry
-        
+            #strips the sequence string of new line characters, adds header and corresponding sequence to dictionary, and then clears seq variable
+            seq = seq.strip("\n")        
             seqdict.update({header:seq})
+            seq=""
 
