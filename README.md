@@ -7,3 +7,13 @@
 
 # filter_contigs.py
 ### filters contigs less than m bp long from a .fna or .faa input file into a new output file
+
+# filter_contigs.py
+### creates a heatmap from an input TSV file. First column used as index
+### Arguments:
+#### -i: input TSV file
+#### -o: output png file
+#### -x: label for X axis (in quotations)
+#### -y: label for Y axis (in quotations)
+#### -t: title of the heatmap (in quotations)
+
