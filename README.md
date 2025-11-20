@@ -17,3 +17,6 @@
 #### -y: label for Y axis (in quotations)
 #### -t: title of the heatmap (in quotations)
 
+# filter_metacerberus_gff.py
+### formats a MetaCerberus output gff file and filters hypothetical genes to make gff compatible with featureCounts
+
